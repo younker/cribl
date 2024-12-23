@@ -1,11 +1,5 @@
 # Thoughtful AI Technical Screen
 
-## Before We Start
-
-Last week I set 3 jobs aside to apply for today. When I started this project, I got my wires crossed and created the repo as `cribl`, not realizing my mistake until several commits had been made. While the optics of such a mistake are not great, you can certainly understand that I am applying for multiple jobs and will forgive such a small mistake.
-
-Thank you for your consideration.
-
 ## Getting Started
 
 The application read in from STDIN and prints the desired stack to STDOUT with errors being placed on STDERR.
@@ -17,8 +11,8 @@ There are 2 ways to run the program.
 1. If you are on a arm based Mac, there is a binary compiled in `./bin` which you can run. See below for how it was built and how to run it:
 
 ```shell
-➜  cribl git:(main) ✗ GOARCH=arm64 GOOS= go build -o bin/stack_dispatch
-➜  cribl git:(main) ✗ ./bin/stack_dispatch 2>stdout.txt
+➜  thoughtful_ai git:(main) ✗ GOARCH=arm64 GOOS= go build -o bin/stack_dispatch
+➜  thoughtful_ai git:(main) ✗ ./bin/stack_dispatch 2>stdout.txt
 19,20,20,20
 STANDARD
 20,20,20,20
@@ -29,9 +23,9 @@ SPECIAL
 REJECTED
 bogus,input
 ^C
-➜  cribl git:(main) ✗ head stdout.txt
+➜  thoughtful_ai git:(main) ✗ head stdout.txt
 unable to parse input 'bogus,input' due to: inputs should contain 4 values 'mass,height,width,depth' in that order. We received invalid input 'bogus,input'
-➜  cribl git:(main) ✗
+➜  thoughtful_ai git:(main) ✗
 ```
 
 If you have go `1.23.1` installed, you can also run it using the following:
@@ -49,12 +43,12 @@ Note that `STDERR` was redirected to `stdout.txt` so any errors would not be ing
 You can run the tests using the following:
 
 ```shell
-➜  cribl git:(main) ✗ pwd
-~/projects/cribl
-➜  cribl git:(main) ✗ go test ./...
-?   	github.com/younker/cribl	[no test files]
-?   	github.com/younker/cribl/adapter	[no test files]
-ok  	github.com/younker/cribl/model	(cached)
+➜  thoughtful_ai git:(main) ✗ pwd
+~/projects/thoughtful_ai
+➜  thoughtful_ai git:(main) ✗ go test ./...
+?   	github.com/younker/thoughtful_ai	[no test files]
+?   	github.com/younker/thoughtful_ai/adapter	[no test files]
+ok  	github.com/younker/thoughtful_ai/model	(cached)
 ```
 
 ## Methodology

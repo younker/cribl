@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/younker/cribl/model"
+	"github.com/younker/thoughtful_ai/model"
 )
 
 type Scanner struct {

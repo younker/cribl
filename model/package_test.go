@@ -3,7 +3,7 @@ package model_test
 import (
 	"testing"
 
-	"github.com/younker/cribl/model"
+	"github.com/younker/thoughtful_ai/model"
 )
 
 func TestPackage_IsValid(t *testing.T) {

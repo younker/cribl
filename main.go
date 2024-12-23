@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/younker/cribl/adapter"
+	"github.com/younker/thoughtful_ai/adapter"
 )
 
 func main() {
