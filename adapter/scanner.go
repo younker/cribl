@@ -30,7 +30,7 @@ func (s Scanner) Sort() {
 		input := scanner.Text()
 		pkg, err := csvInputToPackage(input)
 		if err != nil {
-			fmt.Println(s.outerr, fmt.Errorf("unable to parse input '%s' due to: %w", input, err))
+			fmt.Fprintln(s.outerr, fmt.Errorf("unable to parse input '%s' due to: %w", input, err))
 			continue
 		}
 
